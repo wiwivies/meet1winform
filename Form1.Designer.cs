@@ -28,12 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnCatch = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnCatch
+            // 
+            this.btnCatch.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCatch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCatch.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnCatch.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnCatch.Location = new System.Drawing.Point(411, 242);
+            this.btnCatch.Name = "btnCatch";
+            this.btnCatch.Size = new System.Drawing.Size(114, 35);
+            this.btnCatch.TabIndex = 0;
+            this.btnCatch.Text = "Catch Me!";
+            this.btnCatch.UseVisualStyleBackColor = true;
+            this.btnCatch.MouseEnter += new System.EventHandler(this.ButtonMoveEvent);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.BackColor = System.Drawing.Color.SlateBlue;
+            this.ClientSize = new System.Drawing.Size(982, 553);
+            this.Controls.Add(this.btnCatch);
+            this.MaximumSize = new System.Drawing.Size(1000, 600);
+            this.MinimumSize = new System.Drawing.Size(1000, 600);
+            this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Catch Me";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private Button btnCatch;
     }
 }
